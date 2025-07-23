@@ -1,0 +1,6 @@
+@Oshop__HostAddress = http://localhost:5214
+
+GET {{Oshop__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
