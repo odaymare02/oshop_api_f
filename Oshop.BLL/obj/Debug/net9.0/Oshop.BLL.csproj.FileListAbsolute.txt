@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\bin\Debug\net9.0\Oshop.BLL.deps.json
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\bin\Debug\net9.0\Oshop.BLL.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\bin\Debug\net9.0\Oshop.BLL.pdb
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\bin\Debug\net9.0\Oshop.DAL.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\bin\Debug\net9.0\Oshop.DAL.pdb
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.AssemblyInfo.cs
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.sourcelink.json
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.csproj.Up2Date
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\refint\Oshop.BLL.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\Oshop.BLL.pdb
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop.BLL\obj\Debug\net9.0\ref\Oshop.BLL.dll
