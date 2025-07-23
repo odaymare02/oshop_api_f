@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Oshop.BLL.Services;
 using Oshop.DAL.DTO.Requests;
 
 namespace Oshop.PL.Controllers
 {
-    public class CategoriesController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CategoriesController : ControllerBase
     {
         private readonly ICategoryService categoryService;
 
@@ -18,10 +21,10 @@ namespace Oshop.PL.Controllers
             return Ok(categoryService.GetALlCategories());
         }
         [HttpGet("{id}")]
-        public IActionResult Get([FromRoute]int id)
+        public IActionResult Get([FromRoute] int id)
         {
             var category = categoryService.GetCategoryById(id);
-            if(category is null)
+            if (category is null)
             {
                 return NotFound();
             }
@@ -30,13 +33,13 @@ namespace Oshop.PL.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] CategoryRequest request)
         {
-            var id=categoryService.CreateCategory(request);
+            var id = categoryService.CreateCategory(request);
             return CreatedAtAction(nameof(Get), new { id });//return 201 and link with details of this category
         }
         [HttpPatch("{id}")]
-        public IActionResult UpdateName([FromRoute] int id, [FromBody]CategoryRequest request)
+        public IActionResult UpdateName([FromRoute] int id, [FromBody] CategoryRequest request)
         {
-           var updated= categoryService.UpdateCategory(id, request);
+            var updated = categoryService.UpdateCategory(id, request);
             return updated > 0 ? Ok() : NotFound();
         }
         [HttpPatch("ToogleStatus/{id}")]
