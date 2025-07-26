@@ -164,3 +164,6 @@ C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\obj\Debug\net9.0\refint\Osho
 C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\obj\Debug\net9.0\Oshop.PL.pdb
 C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\obj\Debug\net9.0\Oshop.PL.genruntimeconfig.cache
 C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\obj\Debug\net9.0\ref\Oshop.PL.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Mapster.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Mapster.Core.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Scalar.AspNetCore.dll

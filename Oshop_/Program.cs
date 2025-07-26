@@ -1,9 +1,11 @@
 
 using Microsoft.EntityFrameworkCore;
-using Oshop.BLL.Services;
+using Oshop.BLL.Services.Classes;
+using Oshop.BLL.Services.Interfaces;
 using Oshop.DAL.Data;
-using Oshop.DAL.Repos;
-using Scalar
+using Oshop.DAL.Repos.Classes;
+using Oshop.DAL.Repos.Interfaces;
+using Scalar;
 
 using Scalar.AspNetCore;
 namespace Oshop_
@@ -19,8 +21,11 @@ namespace Oshop_
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+            builder.Services.AddScoped(typeof(IGenericReposetory<>), typeof(GenericReposetory<>));
             builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+            builder.Services.AddScoped<IBrandRepesotory, BrandReposotory>();
             builder.Services.AddScoped<ICategoryService,CategoryService>();
+            builder.Services.AddScoped<IBrandService, BrandService>();
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));

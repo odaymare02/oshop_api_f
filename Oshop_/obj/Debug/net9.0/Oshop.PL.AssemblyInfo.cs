@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Oshop.PL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2966d539af7221bba9f37b253fbb2c1ec57cc401")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3dac4e6bc221989d997da25cdb16184a7b9e226")]
 [assembly: System.Reflection.AssemblyProductAttribute("Oshop.PL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Oshop.PL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
