@@ -11,5 +11,7 @@ namespace Oshop.BLL.Services.Interfaces
 {
     public interface IBrandService:IGenericService<BrandRequest,BrandResponse,Brand>
     {
+        Task<int> CreatWithFile(BrandRequest request);
+
     }
 }

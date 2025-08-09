@@ -167,3 +167,12 @@ C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\obj\Debug\net9.0\ref\Oshop.P
 C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Mapster.dll
 C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Mapster.Core.dll
 C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Scalar.AspNetCore.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\user\Desktop\BackEnd\ASP\API\Oshop_\Oshop_\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Embedded.dll

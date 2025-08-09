@@ -36,9 +36,14 @@ namespace Oshop.BLL.Services.Classes
             return _genericReposetory.Remove(entity);
         }
 
-        public IEnumerable<TResponse> GetALl()
+        public IEnumerable<TResponse> GetALl(bool onlyActive=false)
         {
+
             var entities = _genericReposetory.GetAll();
+            if (onlyActive)
+            {
+                entities = entities.Where(e => e.Status == Status.Active);
+            }
             return entities.Adapt<IEnumerable<TResponse>>();
         }
 

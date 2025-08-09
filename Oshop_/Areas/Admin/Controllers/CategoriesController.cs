@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Oshop.BLL.Services.Interfaces;
 using Oshop.DAL.DTO.Requests;
 
-namespace Oshop.PL.Controllers
+namespace Oshop.PL.Areas.Admin.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[area]/[controller]")]
     [ApiController]
+    [Area("Admin")]
+    [Authorize(Roles ="Admin")]
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
@@ -16,22 +19,19 @@ namespace Oshop.PL.Controllers
             _categoryService = categoryService;
         }
         [HttpGet("")]
-        public IActionResult GetAll()=>Ok(_categoryService.GetALl());
+        public IActionResult getAll() => Ok(_categoryService.GetALl());
         [HttpGet("{id}")]
         public IActionResult Get([FromRoute] int id)
         {
             var category = _categoryService.GetById(id);
-            if (category is null)
-            {
-                return NotFound();
-            }
+            if (category is null) return NotFound();
             return Ok(category);
         }
         [HttpPost]
-        public IActionResult Create([FromBody] CategoryRequest request)
+        public IActionResult createCategory([FromBody] CategoryRequest request)
         {
             var id = _categoryService.Create(request);
-            return CreatedAtAction(nameof(Get), new { id },(""));//return 201 and link with details of this category
+            return CreatedAtAction(nameof(Get), new { id }, (""));
         }
         [HttpPatch("{id}")]
         public IActionResult UpdateName([FromRoute] int id, [FromBody] CategoryRequest request)

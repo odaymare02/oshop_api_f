@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Oshop.BLL.Services.Classes;
 using Oshop.BLL.Services.Interfaces;
 using Oshop.DAL.DTO.Requests;
+using System.Threading.Tasks;
 
-namespace Oshop.PL.Controllers
+namespace Oshop.PL.Areas.Admin.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[area]/[controller]")]
     [ApiController]
+    [Area("Admin")]
+    [Authorize(Roles ="Admin,SuperAdmin")]
     public class BrandsController : ControllerBase
     {
         private readonly IBrandService _brandService;
@@ -26,9 +29,9 @@ namespace Oshop.PL.Controllers
             return Ok(brand);
         }
         [HttpPost]
-        public IActionResult createBrand([FromBody] BrandRequest request)
+        public async Task<IActionResult> createBrand([FromForm] BrandRequest request)
         {
-            var id = _brandService.Create(request);
+            var id = await _brandService.CreatWithFile(request);
             return CreatedAtAction(nameof(Get), new { id }, (""));
         }
         [HttpPatch("{id}")]
@@ -49,6 +52,5 @@ namespace Oshop.PL.Controllers
             var deleted = _brandService.Delete(id);
             return deleted > 0 ? Ok() : NotFound();
         }
-
     }
 }

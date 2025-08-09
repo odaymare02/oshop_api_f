@@ -9,5 +9,8 @@ namespace Oshop.DAL.Model
     public class Brand:BaseModel
     {
         public string Name { get; set; }
+        public string image { get; set; }
+        public List<Product> Products { get; set; } = new List<Product>();
+
     }
 }
